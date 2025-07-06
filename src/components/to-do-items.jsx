@@ -1,8 +1,17 @@
-function TodoItems(){
+function TodoItems({items,onRemove }){
     return(
-        <div className="items">
-            <span>Task1</span>
-            <button className="button2">Remove</button>
+        <div className="items" >
+            {
+                items.map((item, i) => (
+                    <div className="item" key={i}>
+                        <span>{item}</span>
+                        <button className="remove-btn" onClick={()=>onRemove(item)}>Remove</button>
+
+                    </div>
+                ))
+            }
+            
+           
         </div>
     )
 }

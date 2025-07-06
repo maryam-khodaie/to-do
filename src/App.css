@@ -42,7 +42,7 @@
   border: 1px solid black;
 }
 
-.button{
+.submit-btn{
   background-color: #6b6a6a;
   border: 0px;
   cursor: pointer;
@@ -56,14 +56,20 @@
 
 /* items */
 .items{
-  background-color: rgb(184, 183, 181);
   /* width: 100px; */
   padding: 10px 4px;
   display: flex;
-
-  
+  flex-direction: column;
+  gap: 16px;
 }
-.button2{
+
+.item{
+  background-color: rgb(184, 183, 181);
+  padding: 8px;
+  display: flex;
+  border-radius: 8px;
+}
+.remove-btn{
   border: 0;
   transition: 0.8s;
 }
@@ -71,4 +77,13 @@
 span{
   width: 90%;
   padding: 10px;
+}
+
+.button3{
+  margin-left: 20rem;
+  margin-top: 5rem;
+  background-color: red;
+  width: 10%;
+  display: flex;
+  
 }
